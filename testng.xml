@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="courseName" value="Java"/>
+    <parameter name="cityName" value="Pune"/>
+    <parameter name="browserName" value="firefox"/>
+   <!--<groups>
+        <run>
+            <include name="smoke"/>
+            <include name="sanity"/>
+        </run>
+    </groups>-->
+    <test verbose="2" preserve-order="true" parallel="false" thread-count="2" name="C:/Users/acer/IdeaProjects/Maven_Project">
+        <classes>
+            <class name="testing.parameterization.ParameterExample"/>
+            <class name="testing.parameterization.DataProviderWithExcel"/>
+        </classes>
+    </test>
+</suite>
